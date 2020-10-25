@@ -20,7 +20,7 @@
 此專案用了 golang  的 gin 框架來開發 Restful API ,裡面有兩種做法來到此需求的目的,實作此兩種方法的地方為 gin 的 middleware
 
 1. in-memory (service/demo) 這個可以使用在需求較沒有這麼大只需要單機就好的小型專案
-2. redis (service/demo_redis) 這個可以使用在大型專案的開發當資料量大到 in-memory 承受不住時,我們可以透過 redis 的方式來分散對機器的負擔,單個 redis 不行可以水平擴張 redis 來抒解此專案的壓力
+2. redis (service/demo_redis) 這個可以使用在大型專案的開發當資料量大到 in-memory 承受不住時,我們可以透過 redis 的方式來分散對機器的負擔,當單個 redis 不行時可以透過水平擴張的方式來抒解此專案的壓力
 
 **啟動專案**
 修改專案中的 app.conf (預設為 local ) 修改完畢後直接在 terminal 輸入以下指令即可運行
