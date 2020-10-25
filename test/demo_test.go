@@ -9,7 +9,7 @@ import (
 	"testing"
 )
 
-func TestCheckRequestLimitOver(t *testing.T) {
+func TestCheckRequestLimit(t *testing.T) {
 	testIP := "1:1:1:1"
 	var err error
 	limit := 10
@@ -28,7 +28,7 @@ func TestCheckRequestLimitOver(t *testing.T) {
 
 	return
 }
-func TestCheckRequestRedisLimitOver(t *testing.T) {
+func TestCheckRequestRedisLimit(t *testing.T) {
 	glob.Rdb = redis.NewClient(&redis.Options{
 		Addr:     "localhost:6379",
 		Password: "",
